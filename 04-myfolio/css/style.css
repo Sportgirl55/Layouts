@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+
+/*
+font-family: 'Open Sans', sans-serif;
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 0px;margin: 0;
+}
+
+.wrapper-page{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.block{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/*
+    header begin
+*/
+
+.top-header{
+    background: #02918c;
+}
+
+.header-content{
+    text-align: center;
+    color: #fff;
+    background: url(../img/bg-header.jpg) no-repeat;
+    background-size: cover;
+}
+
+.header-bg-color{
+    background: linear-gradient(to right, rgba(14,128,124,0.18), rgba(207,201,29,0.18));
+    padding-top: 210px;
+    padding-bottom: 210px;
+}
+
+.header-content h1{
+    text-transform: uppercase;
+}
+
+.header-content h1 small{
+    display: block;
+    margin-bottom: 25px;
+    text-transform: none;
+}
+
+.link-button{
+    display: block;
+    width: 200px;
+    margin: 50px auto 0 auto;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #0b1016;
+    background: #cfc91d;
+}
+
+/*
+    header end
+*/
+
+/*
+    about begin
+*/
+
+.about-block{
+    text-align: center;
+    color: #7e8287;
+}
+
+.about-block h2{
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #02918c;
+}
+.about-description{
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.about-description span{
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.about-item-group{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.about-item{
+    width: 25%;
+    float: left;
+    padding: 40px 60px 60px 60px;
+    border-right: 1px solid #d9dbdb;
+}
+
+.about-item:last-child{
+    border-right: none;
+}
+
+/*
+    about end
+*/
+
+/*
+    service begin
+*/
+
+.services{
+    color: #7e8287;
+}
+
+.services h2{
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #02918c;
+}
+
+.services-description-block{
+    width: 50%;
+    float: left;
+    background: #f0f0e8;
+}
+
+.services-image{
+    float: right;
+    width: 50%;
+    height: 730px;
+    background: url(../img/bg-services.jpg) no-repeat;
+    background-size: cover;
+}
+/*
+    service end
+*/
+
+/*
+    portfolio begin
+*/
+
+.portfolio{
+    text-align: center;
+    color: #7e8287;
+}
+
+.portfolio h2{
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #02918c;
+}
+
+.portfolio-description{
+    max-width: 670px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.portfolio-block a img{
+    display: block;
+    width: 25%;
+    height: 235px;
+    float: left;
+}
+
+/*
+    portfolio end
+*/
+
+/*
+    contact begin
+*/
+
+.contact{
+    color: #7e8287;
+    text-align: center;
+}
+
+.contact h2{
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #02918c;
+}
+
+.contact-description{
+    max-width: 670px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.contact-form{
+    background: #0b0b0b;
+}
+
+/*
+    contact end
+*/
+
+footer{
+    background: #000;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 35px;padding-bottom: 25px;
+}

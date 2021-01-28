@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,900");
+
+@import url("https://fonts.googleapis.com/css?family=Hammersmith+One");
+
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 940px;
+    margin: auto;
+    border: 1px solid blue;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+}
+
+.header__wrapper {
+    background: #352c59;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+ }
+
+.hero {
+    padding-bottom: 205px;
+    padding-top: 160px;
+}
+
+.hero__text {
+    max-width: 780px;
+    text-align: center;
+    margin: auto;
+}
+
+.hero__btn {
+    display: block;
+    max-width: 140px;
+    margin: 50px auto 0;
+    padding: 10px 15px;
+    border: 1px solid black;
+}
+
+.main-page {
+    background: #b6b6b6;
+}
+
+.expertise {
+    background: #ffffff;
+    min-height: 400px;
+}
+
+.expertise__items-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.expertise__item {
+    width: calc(100% / 3 - 20px);
+    height: 220px;
+    margin: 10px;
+    border: 1px solid red;
+}
+
+.team {
+    background: #352c59;
+    min-height: 400px;
+}
+
+.team__items {
+    display: flex;
+}
+
+.team__item {
+    width: calc(100% / 4 - 20px);
+    height: 308px;
+    margin: 10px;
+    border: 1px solid green;
+}
+
+.team__photo {
+    min-width: inherit;
+    height: 230px;
+    border: 1px solid black;
+}
+
+.team__btn {
+    display: block;
+    max-width: 140px;
+    margin: 90px auto;
+    padding: 10px 15px;
+    border: 1px solid black;
+}
+
+.works {
+    background: #ffffff;
+    min-height: 400px;
+}
+
+.works__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.works__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.works__item {
+    width: calc(100% / 6);
+    height: 200px;
+    border: 1px solid black;
+}
+
+.works__btn {
+    display: block;
+    max-width: 140px;
+    margin: 90px auto;
+    padding: 10px 15px;
+    border: 1px solid black;
+}
+
+.footer {
+    background: #352c59;
+    min-height: 400px;
+    color: white;
+}
+
+.footer__wrapper {
+    display: flex;
+}
+
+.footer__wrapper > * {
+    width: calc(100% / 3 - 20px);
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.footer h3 {
+    text-align: left;
+}

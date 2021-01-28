@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Kaushan Script', cursive;
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    outline: 1px solid red;
+    min-height: 900px;
+}
+
+header {
+    outline: 1px solid darkblue;
+    background: blue;
+    min-height: 100px;
+}
+
+nav {
+    background: lightseagreen;
+    outline: 1px solid green;
+    min-height: 80px;
+}
+
+main {
+    background: greenyellow;
+    outline: 1px solid red;
+    /* min-height: 600px; */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+footer {
+    outline: 1px solid green;
+    background:pink;
+    min-height: 100px;
+}
+
+.hero {
+    outline: 1px solid red;
+    background: yellow;
+    min-height: 200px;
+}
+
+.container {
+    outline: 1px solid black;
+    width: 1210px;
+    margin: auto;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__menu {
+    display: flex;
+}
+
+.header__menu li {
+    margin-right: 50px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.hero__menu {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.about__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__item {
+    min-width: 380px;
+    height: 300px;
+    outline: 1px solid black;
+    background: rebeccapurple;
+}
+
+.services__item {
+    width: calc(100%/3 - 20px);
+    height: 100px;
+    background:pink;
+    outline: 1px solid black;
+    margin: 10px;
+}
+
+.services__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.digits {
+    display: flex;
+}
+
+.digits__item {
+    width: calc(100%/5 - 20px);
+    height: 100px;
+    background:aqua;
+    outline: 1px solid black;
+    margin: 10px;
+}
+
+.widgets {
+    display: flex;
+}
+
+.widgets__mogo,
+.widgets__blogs,
+.widgets__instagram {
+    width: calc(100%/3 - 20px);
+    height: 250px;
+    background: lemonchiffon;
+    outline: 1px solid black;
+    margin: 10px;
+}
+
+.section__title {
+    text-align: center;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+}

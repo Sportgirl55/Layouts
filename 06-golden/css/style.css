@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,400i');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Droid Serif', serif;
+font-family: 'Roboto Slab', serif;
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wrapper-page{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.block{
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.title-section{
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.description-section{
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 80px;
+    margin-top: 0;
+}
+
+/*
+    header begin
+*/
+
+header{
+    background: url(../img/bg-header.jpg) no-repeat;
+    background-size: cover;
+}
+
+.header-bg-color{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 40px;
+    padding-bottom: 160px;
+    margin-bottom: 120px;
+}
+
+.logo{
+    float: left;
+}
+
+header nav{
+    float: right;
+    padding-top: 10px;
+}
+
+header nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li{
+    list-style: none;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-left: 45px;
+    float: left;
+}
+
+header nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    color: #fed136;
+}
+
+header h1{
+    font-size: 75px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 60px;
+}
+
+header h1 small{
+    display: block;
+    font-size: 40px;
+    text-transform: none;
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+.link-button{
+    display: block;
+    width: 240px;
+    background: #fed136;
+    color: #fff;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 3px;
+}
+
+/*
+    header end
+*/
+
+/*
+    services begin
+*/
+
+.services{
+    text-align: center;
+    color: #898989;
+    margin-bottom: 120px;
+}
+
+.services h3{
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.services-item{
+    width: 290px;
+    margin-right: 35px;
+    float: left;
+}
+
+.services-item:last-child{
+    margin-right: 0;
+}
+
+.services-item img{
+    margin-bottom: 25px;
+}
+
+.services-item p{
+    font-size: 14px;
+}
+
+/*
+    services end
+*/
+
+/*
+    portfolio begin
+*/
+
+.portfolio{
+    text-align: center;
+    color: #898989;
+    margin-bottom: 120px;
+    background: #f7f7f7;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.extra{
+    margin-left: -17.5px;
+    margin-right: -17.5px;
+}
+
+.portfolio h3{
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.portfolio-item{
+    width: 290px;
+    margin-right: 17px;
+    margin-left: 17px;
+    float: left;
+    background: #fff;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+.portfolio-item img{
+    padding-bottom: 30px;
+}
+
+.portfolio-item p{
+    margin: 0;
+}
+
+/*
+    portfolio end
+*/
+
+/*
+    about begin
+*/
+
+.about{
+    text-align: center;
+    color: #898989;
+    margin-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+
+.about .block{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.about-item{
+    margin-bottom: 90px;
+}
+
+.about-item:first-child{
+    float: left;
+    text-align: right;
+}
+
+.about-item:nth-child(2n){
+    float: right;
+    text-align: left;
+
+}
+
+.about-item:nth-child(2n+1){
+    float: left;
+    text-align: right;
+}
+
+.about-item:last-child{
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 50%;
+    background: #fed136;
+    margin: 0 auto;
+    padding-top: 25px;
+    border: 7px solid #f1f1f1;
+    clear: both;
+    float: none;
+}
+
+.about-item:last-child p{
+    width: 100px;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+.about-item img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 7px solid #f1f1f1;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: inline-block;
+}
+
+.about-item h3{
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 17px;
+}
+
+.about-item h3 span{
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+
+.about-item-description{
+    width: 308px;
+    display: inline-block;
+}
+
+/*
+    about end
+*/
+
+/*
+    team begin
+*/
+
+.team{
+    text-align: center;
+    color: #898989;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background: #f9f9f9;
+}
+
+.team-item{
+    width: 290px;
+    margin-right: 35px;
+    float: left;
+}
+
+.team-item:last-child{
+    margin-right: 0
+}
+
+.team-item img{
+    width: 220px;
+    height: 220px;
+    border: 7px solid #fff;
+    border-radius: 50%;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: inline-block;
+}
+
+.team-item h3 {
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 17px;
+}
+
+.team-description{
+    width: 500px;
+    margin: 45px auto 0 auto;
+}
+
+.team-social{
+    display: block;
+    text-align: center;
+}
+
+.team-social a img{
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+.team-social a img:last-child{
+    margin-right: 0;
+}
+
+/*
+    team end
+*/
+
+/*
+    partners begin
+*/
+
+.partners-group{
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+
+.partners{
+    display: block;
+    width: 148px;
+    height: 40px;
+    float: left;
+    margin-right: 113px;
+}
+
+.partners-end{
+    display: block;
+    float: left;
+    width: 150px;
+    height: 40px;
+    margin-right: 0;
+}
+
+/*
+    partners end
+*/
+
+/*
+    contact begin
+*/
+
+.contact{
+    text-align: center;
+    color: #898989;
+    background: url(../img/bg-contact.jpg) no-repeat;
+}
+
+.contact .block{
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.contact h2{
+    color: #fff;
+    margin-top: 0;
+}
+
+.contact input, textarea{
+    background: #fff;
+    border: 1px solid #cccccc;
+    padding: 18px;
+    display: block;
+    border-radius: 3px;
+}
+.contact input{
+    margin-bottom: 25px;
+    width: 450px;
+}
+
+.input{
+    float: left;
+}
+
+.contact textarea{
+    float: right;
+    width: 450px;
+}
+
+input[type="submit"]{
+    font-size: 18px;
+    display: block;
+    width: 240px;
+    background: #fed136;
+    color: #fff;
+    margin: 25px auto 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 3px;
+    border: none;
+}
+
+/*
+    contact end
+*/
+
+/*
+    footer begin
+*/
+
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.copyright{
+    display: inline-block;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.footer-social{
+    display: inline-block;
+    margin-left: 110px;
+    padding-left: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.footer-social li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/*
+    footer end
+*/

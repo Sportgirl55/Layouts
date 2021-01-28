@@ -1,0 +1,27 @@
+
+*{
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wrapper-page{
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+main{
+    width: 630px;
+    float: left;
+    background: #f8eedf;
+}
+
+aside{
+    width: 390px;
+    float: right;
+    background: #f1e2ce;
+}
