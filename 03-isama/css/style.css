@@ -2,43 +2,175 @@
     box-sizing: border-box;
 }
 
+:root {
+    --gray: #f2ebe9;
+ 
+}
 
-/*
-    header begin
-*/
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
 
-/*
-    header end
-*/
+.list {
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
 
-/*
-    about begin
-*/
+}
 
-/*
-    about end
-*/
+a {
+    text-decoration: none;
+}
 
-/*
-    make begin
-*/
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
-/*
-    make end
-*/
+h1, h2 {
+    text-align: center;
+}
 
-/*
-    project begin
-*/
 
-/*
-    project end
-*/
+/* HEADER */
 
-/*
-    footer begin
-*/
+.header__up {
+    display: flex;
+    background: #eceef4;
+    border: 1px solid blue;
+}
 
-/*
-    footer end
-*/
+.header__meta {
+    border: 1px solid blue;
+    display: flex;
+}
+
+.header__meta-item {
+    display: flex;
+}
+
+.header__socials {
+    border: 1px solid red;
+}
+
+/* .header__logo {
+    border: 1px solid blue;
+} */
+
+.header__address {
+    border: 1px solid blue;
+}
+
+.header__menu {
+    display: flex;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* MAIN */
+
+.hero {
+    text-align: center;
+    min-height: 800px;
+    background-image: url('../img/hero.png');
+}
+
+.about__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__item {
+    width: calc(100% / 2 - 100px);
+    border: 1px solid blue;
+}
+
+.about__pic {
+    width: 100px;
+    border: 1px solid blue;
+}
+
+.title__wrap {
+    display: flex;
+    justify-content: center;
+    border: 1px solid blue;
+}
+
+/* ACTION */
+
+.action__items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.action__item {
+    display: flex;
+    width: calc(100% / 2 - 20px);
+    border: 1px solid blue;
+}
+
+.action__item:nth-child(2n+1) {
+    margin-right: 30px;
+}
+
+.action__desc {
+
+}
+
+/* PROJECTS */
+
+.projects {
+    background: var(--gray);
+    border: 1px solid green;
+}
+
+.project__items {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid green;
+}
+
+.project__item {
+    margin: 10px;
+    width: calc(100% / 4 - 20px);
+    min-height: 280px;
+    border: 1px solid blue;
+}
+
+.project__tags {
+    display: flex;
+    justify-content: center;
+
+}
+
+.project__tag {
+    margin: 9px;
+    border: 1px solid #bbbbbb;
+    padding: 15px 30px;
+}
+
+.project__tag span {
+    width: 80%;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background: #2b2c2d;
+    color: white;
+    
+}
+
+.footer__wrap {
+    border: 1px solid blue;
+    margin-bottom: 35px;
+    margin-top: 85px;
+}
+
