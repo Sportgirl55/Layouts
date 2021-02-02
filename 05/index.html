@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout-5</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
@@ -15,21 +15,24 @@
     <header class="header">
         <div class="container header__wrap">
             <div class="header__logo">
-                Your Logo
+                <span>Your Logo</span>
             </div>
             <div class="header__nav">
                 <ul class="header__menu list">
-                    <li>Home</li>
-                    <li>Our services</li>
-                    <li>References / Works</li>
-                    <li>Career</li>
-                    <li>Contact us</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our services</a></li>
+                    <li><a href="">References/Works</a></li>
+                    <li><a href="">Career</a></li>
+                    <li><a href="">Contact us</a></li>
                 </ul>
             </div>
-            <div class="header__search">
-                <input type="text" placeholder="search term...">
-                <img src="img/search.png" alt="search">
-            </div>
+
+            <form class="header__search" action="#" method="#">
+                <span class="hidden-text">Enter a search term</span>
+                <input class="header__search-field" type="search" name="query" placeholder="search term...">
+                <button class="header__search-btn" type="submit"><span class="hidden-text">Сlick on the button to
+                        start searching</span></button>
+            </form>
         </div>
     </header>
     <main class="main__page">
@@ -154,24 +157,29 @@
                 <div class="company">
                     <h3>Company</h3>
                     <ul class="footer__nav list">
-                        <li>About us</li>
-                        <li>Career</li>
-                        <li>References / Works</li>
-                        <li>Contact us</li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">References / Works</a></li>
+                        <li><a href="#">Contact us</a></li>
                     </ul>
                 </div>
                 <div class="services">
-                    <h3>Company</h3>
+                    <h3>Our services</h3>
                     <ul class="footer__nav list">
-                        <li>Lorem ipsum</li>
-                        <li>Sfdsfs</li>
-                        <li>Swdfghb hggt</li>
-                        <li>Sghu ddfdt</li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Sfdsfs</a></li>
+                        <li><a href="#">Swdfghb hggt</a></li>
+                        <li><a href="#">Sghu ddfdt</a></li>
                     </ul>
                 </div>
                 <address class="contacts">
                     <h3>Contact us</h3>
-
+                    <div class="contacts__wrap">
+                        <span class="contacts__phone">588 125 4666</span>
+                        <span class="contacts__email">support@yourdomain.com</span>
+                        <span>5 Place Road Park</span>
+                        <span>New York 24856</span>
+                    </div>
                 </address>
                 <div class="footer__logo">
                     <img src="img/paypal.png" alt="Paypal">
