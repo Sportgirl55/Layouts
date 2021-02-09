@@ -1,160 +1,174 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
-    <link rel="stylesheet" class="text/css" href="css/main.css">
-	<title>Creative Studio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout-8</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/script.js"></script>
+  <!-- <script type="text/javascript" src="/jquery-3.5.1.min.js"></script> -->
+  <!-- <script type="text/javascript" src="js/jquery.pixlayout.0.9.8.js"></script> -->
+<!--  
+  <script type="text/javascript">
+    $(function () {
+      $.pixlayout({ clip: true, src: "./08-psd.jpg", show: true, center: true, top: 0, left: 0, pervious: false });
+    }); 
+  </script> -->
 </head>
 
 <body>
-  <!--<div class="top-band"></div>-->
-  <main class="wrapper">
-    <header class="page-header">
-      <div class="logo">
-        <a href="#"><img src="images/logo.png" alt=""></a>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrap">
+        <div class="header__logo">
+          <a href="#"><img src="images/logo.png" alt="Logo"></a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__menu list">
+            <li class="header__menu-item"><a href="#">Home</a></li>
+            <li class="header__menu-item"><a href="#">About us</a></li>
+            <li class="header__menu-item"><a href="#">Portfolio</a></li>
+            <li class="header__menu-item"><a href="#">Services</a></li>
+            <li class="header__menu-item"><a href="#">Blog</a></li>
+            <li class="header__menu-item"><a href="#">Contact us</a></li>
+          </ul>
+          <button class="hamb" type="button">
+            <span class="hamb__line">
+                <span class="visually-hidden">Открыть меню</span>
+            </span>
+        </button>
+        <button class="close-menu visually-hidden" type="button">
+            <span class="visually-hidden">Закрыть меню</span>
+        </button>
+        </nav>
       </div>
-      <div class="header-info">
-        info@CreativeStudio.com
+    </div>
+  </header>
+  <main class="main__page">
+    <div class="container" id="hero__box">
+      <div class="hero">
+        <h1 class="hero__title">Creative design services</h1>
+        <div class="hero__example">
+          <span>Here’s some nice work</span>
+          <a href="#portfolio"><span>view portfolio &rarr; </span></a>
+        </div>
       </div>
-      <nav class="main-menu">
-        <a href="#">home</a>
-        <a href="#">about us</a>
-        <a href="#">portfolio</a>
-        <a href="#">services</a>
-        <a href="#">blog</a>
-        <a href="#">contact us</a>
-      </nav>
-    </header>
-    
-    <section class="title">
-      <h1>Creative Design Services</h1>
-      <div class="preview">
-        <span>
-          Here’s some nice work
-        </span>
-        <a href="#">
-          <span class="portfolio">
-            view portfolio
-          </span>
-        </a>
-      
+    </div>
+
+    <div class="sections">
+      <div class="container">
+        <div class="sections__wrap">
+          <section class="about">
+            <h2 class="section__title"><span class="sign">&rarr;</span> About us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta
+              posuere quis massa. Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id
+              sem lobortis scelerisque. Praesent eget consequat libero. </p>
+            <span class="about__link"><span class="sign__tiny">&rarr;</span><a href="#"> Read</a></span>
+          </section>
+          <section class="benefits">
+            <h2 class="section__title"><span class="sign">&rarr;</span> Our benefits</h2>
+            <div class="benefits__wrap">
+              <ul class="benefits__list list">
+                <li>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada
+                    porta posuere quis massa. </p>
+                </li>
+                <li>
+                  <p>Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id sem lobortis
+                    scelerisque. Praesent eget consequat</p>
+                </li>
+                <li>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada
+                    porta posuere quis massa. </p>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="testimonial">
+            <h2 class="section__title"><span class="sign">&rarr;</span>Testimonials</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta
+              posuere quis massa. Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id
+              sem lobortis scelerisque. </p>
+            <span>Rafi, <a href="#">Graphicsfuel.com</a></span>
+          </section>
+        </div>
+      </div>
+    </div> <!-- sections -->
+
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="section__title"><span class="sign__tiny">&rarr;</span> Our Portfolio</h2>
+        <div class="portfolio__wrap">
+          <div class="portfolio__item">
+            <a href="#"><img src="images/bg-item1.jpg" alt="portfolio item"></a>
+          </div>
+          <div class="portfolio__item">
+            <a href="#"><img src="images/bg-item2.jpg" alt="portfolio item"></a>
+          </div>
+          <div class="portfolio__item">
+            <a href="#"><img src="images/bg-item3.jpg" alt="portfolio item"></a>
+          </div>
+          <div class="portfolio__item">
+            <a href="#"><img src="images/bg-item4.jpg" alt="portfolio item"></a>
+          </div>
+        </div>
       </div>
     </section>
-    
-    <section class="about">
-      <div class="about-us">
-        <h2>about us</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa. Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id sem lobortis scelerisque. Praesent eget consequat libero. 
-        </p>
-        <a href="#">read</a>
+
+    <div class="blog">
+      <div class="container">
+        <div class="blog__wrap">
+          <section class="blog">
+            <h3><span class="sign__tiny">&rarr;</span> Blog Updates</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta
+              posuere quis massa. Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id
+              sem lobortis scelerisque. Praesent eget consequat libero. </p>
+          </section>
+          <section class="socials">
+            <h3><span class="sign__tiny">&rarr;</span> Connect with us</h3>
+              <div class="socials__wrap">
+                <div class="socials__twitter">
+                  <a href="#"><img src="images/social__twitter.png" alt="twitter"></a>
+                </div>
+                <div class="socials__facebook">
+                  <a href="#"><img src="images/social__facebook.png" alt="facebook"></a>
+                </div>
+                <div class="socials__img">
+                  <a href="#"><img src="images/social__img.png" alt="social network"></a>
+                </div>
+                <div class="socials__rss">
+                  <a href="#"><img src="images/social__rss.png" alt="rss"></a>
+                </div>
+              </div>
+          </section>
+        </div>
       </div>
-      
-      <div class="benefits">
-        <h2>our Benefits</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa.
-        </p>
-      </div>
-      
-      <div class="testimonials">
-        <h2>testimonials</h2>
-        <blockquote>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa. Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id sem lobortis scelerisque.
-          </p>
-          <footer class="author">
-            Rafi, Graphicsfuel.com
-          </footer>
-        </blockquote>      
-      </div>
-    </section>
-    
-    <section class="our-portfolio">
-      <h2>our portfolio</h2>
-      <ul>
-        <li class="margin-left">
-          <a href="#">
-            <img src="images/bg-item1.jpg">
-            <span>view</span>
-          </a>
-        </li>
-        <li class="margin-left">
-          <a href="#">
-            <img src="images/bg-item2.jpg">
-            <span>view</span>
-          </a>
-        </li>
-        <li class="margin-left">
-          <a href="#">
-            <img src="images/bg-item3.jpg">
-            <span>view</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="images/bg-item4.jpg">
-            <span>view</span>
-          </a>
-        </li>
-      </ul>      
-    </section>
-    
-    <section class="updates-and-social">
-      <div class="update-block">
-      <h3>blog updates</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa. Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id sem lobortis scelerisque. Praesent eget consequat libero. 
-      </p>
-      </div>
-      
-      <div class="social-block">
-      <h3>conenct with us</h3>
-        <a class="social-twitter" href="#"></a>
-        <a class="social-facebook" href="#"></a>
-        <a class="social-twopoint" href="#"></a>
-        <a class="social-rss" href="#"></a>
-      </div>
-    </section>  
+    </div>
   </main>
-  
-  <footer class="page-footer">
-      <div class="footer-info">
-        <div class="footer-menu">
-          <ul>
-            <li class="border">
-              <a href="#">home&nbsp;</a>
-            </li>
-            <li class="border">
-              <a href="#">about us&nbsp;</a>
-            </li>
-            <li class="border">
-              <a href="#">portfolio&nbsp;</a>
-            </li>
-            <li class="border">
-              <a href="#">services&nbsp;</a>
-            </li>
-            <li class="border">
-              <a href="#">blog&nbsp;</a>
-            </li>
-            <li>
-              <a href="#">contact us</a>
-            </li>
-          </ul>           
-          <p>
-            &copy;2010 CreativeStudio. All Rights Reserved      
-          </p>
-        </div>      
-          <div class="footer-logo">
-          <a href="#"><img src="images/logo.png" alt=""></a>
-        </div>      
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrap">
+        <nav class="footer__nav">
+          <ul class="footer__menu list">
+            <li class="footer__menu-item"><a href="#">Home</a></li>
+            <li class="footer__menu-item"><a href="#">About us</a></li>
+            <li class="footer__menu-item"><a href="#">Portfolio</a></li>
+            <li class="footer__menu-item"><a href="#">Services</a></li>
+            <li class="footer__menu-item"><a href="#">Blog</a></li>
+            <li class="footer__menu-item"><a href="#">Contact us</a></li>
+          </ul>
+          <div class="footer__copyright">
+            <span>&copy; 2010 CreativeStudio. All Rights Reserved</span>
+          </div>
+        </nav>
+        <div class="footer__logo">
+          <img src="images/logo.png" alt="Logo">
+        </div>
       </div>
+    </div>
   </footer>
 </body>
+
 </html>
