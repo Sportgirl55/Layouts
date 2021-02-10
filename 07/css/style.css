@@ -1,27 +1,383 @@
+@font-face {
+    font-family: "Candara";
+    src: url("../fonts/CandaraRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
 
-*{
+@font-face {
+    font-family: "Candara";
+    src: url("../fonts/CandaraBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Cambria";
+    src: url("../fonts/Cambria.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Cambria Math";
+    src: url("../fonts/Cambria.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Verdana";
+    src: url("../fonts/Verdana.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+* {
     box-sizing: border-box;
 }
 
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.wrapper-page{
-    max-width: 1020px;
+.container {
+    max-width: 949px;
     margin: 0 auto;
 }
 
-main{
-    width: 630px;
-    float: left;
-    background: #f8eedf;
+.list {
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
 }
 
-aside{
-    width: 390px;
-    float: right;
-    background: #f1e2ce;
+body {
+    font-family: "Candara", sans-serif;
+    margin: 0;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.hidden-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+:root {
+    --brown: #3f342e;
+    --blue: #558796;
+    --btn-orange: #e3b35b;
+    --white: #ffffff;
+}
+
+/* HEADER */
+
+.header {
+    background: #e7b962;
+    color: var(--white);
+}
+
+.header__wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+/* NAV */
+
+.nav {
+    background: var(--brown);
+}
+
+.nav__wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.nav__menu {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.nav__menu-item {
+    margin-left: 15px;
+}
+
+.search {
+    display: flex;
+    box-shadow: 0 0 0 1px #bcbcbc;
+    width: 260px;
+    border-radius: 3px;
+}
+
+.search__field {
+    border: none;
+    margin: 0;
+    width: 100%;
+    /* height: 40px; */
+    background: var(--blue);
+    font-size: 12px;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+
+.search__btn {
+    width: 15px;
+    height: 15px;
+    margin: auto 20px;
+    cursor: pointer;
+}
+
+/* WELCOME */
+
+.welcome {
+    background: #d6c9aa;
+    padding: 50px 0;
+}
+
+.welcome__wrapper {
+    display: flex;
+    background: var(--brown);
+}
+
+.welcome__inner {
+    padding: 30px;
+    width: 550px;
+}
+
+.welcome__btns {
+    display: flex;
+}
+
+.welcome__btn {
+    background-color: var(--btn-orange);
+    min-width: 160px;
+    padding: 15px 25px;
+    text-align: center;
+    border-radius: 3px;
+
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.welcome__btn:first-child {
+    margin-right: 30px;
+}
+
+h1 {
+    font-family: "Cambria";
+    font-size: 26px;
+    color: #67a1b2;
+}
+
+h2 {
+    color: #5a8f9d;
+}
+
+/* MAIN PAGE */
+
+h3 {
+    font-size: 22px;
+    font-family: "Cambria Math";
+    color: #6999a5;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.main__page {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: #f5eedf;
+}
+
+.main__container {
+    width: 1020px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.blog {
+    outline: 1px solid red;
+    min-height: 670px;
+    width: 635px;
+    background: #f5eedf;
+}
+.blog__inner {
+    width: 550px;
+    margin: 0 auto;
+}
+
+.blog__post-title {
+    color: #3f342e;
+}
+
+.blog__post-text {
+    color: #000000;
+}
+
+.sidebar {
+    outline: 1px solid blue;
+    min-height: 670px;
+    width: 385px;
+    /* background: #e9ddc8; */
+    background: linear-gradient(to bottom, #e8dbc5, #f5eedf);
+}
+
+.sidebar__inner {
+    display: flex;
+    flex-direction: column;
+    width: 308px;
+    margin: 50px auto;
+}
+
+.comments {
+    width: 100%;
+    height: 196px;
+    background: #4b7889;
+    outline: 1px solid red;
+    margin-bottom: 50px;
+}
+
+.about {
+    outline: 1px solid red;
+    margin-bottom: 50px;
+}
+
+.sponsors {
+    display: flex;
+    outline: 1px solid red;
+}
+
+/* WIDGETS */
+
+.widgets {
+    background: #3a302a;
+}
+
+.widgets__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.widgets__item {
+    width: calc(100% / 3 - 45px);
+    height: 323px;
+    outline: 1px solid red;
+    margin: 45px 0;
+}
+
+.widgets__quote {
+}
+.widgets__projects {
+}
+
+.widgets__btn {
+    background-color: var(--btn-orange);
+ 
+ 
+    /* margin-left: auto;
+    text-align: center;
+    border-radius: 1px;
+
+    font-family: "Cambria Math";
+    font-size: 18px; */
+}
+
+.widgets__projects-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.widgets__projects-img {
+    width: calc(100% / 2 - 10px);
+    margin-bottom: 20px;
+}
+
+.widgets__twitter {
+}
+
+.widgets__twitter-content p{
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #538392;
+}
+
+.footer__wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.footer__copyright {
+    outline: 1px solid red;
+}
+
+.footer__nav {
+   
+}
+
+.footer__menu-item {
+    font-family: "Cambria Math";
+    font-size: 13px;
+    padding: 0 5px;
+    border-left: 1px solid var(--white);
+}
+
+.footer__menu-item:first-child {
+    border-left: none;
+}
+
+.footer__menu-item a {
+    text-transform: none;
+}
+
+.btn {
+    margin-left: auto;
+    text-align: center;
+    border-radius: 1px;
+
+    font-family: "Cambria Math";
+    font-size: 18px;
+
+    max-width: 112px;
+    padding: 5px 0;
+}
+
+.blog__btn {
+    background-color: #493f39;
+   
 }

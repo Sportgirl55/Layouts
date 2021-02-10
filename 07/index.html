@@ -1,157 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blog</title>
-    <link href="css/style.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout-7</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <div class="wrapper-page">
-        <header>
-            <div class="top-header">
-                <div class="logo">
-                    <p>Sitname</p>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <div class="header__logo">
+                    Logo
                 </div>
-                <div class="header-social">
-                    <ul>
-                        <li><a href="#"><img src="img/digg.png"></a></li>
-                        <li><a href="#"><img src="img/mail.png"></a></li>
-                        <li><a href="#"><img src="img/icon.png"></a></li>
-                        <li><a href="#"><img src="img/viber.png"></a></li>
-                    </ul>
+                <div class="header__socials">
+                    socials
                 </div>
             </div>
-            <div class="header-nav">
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="search">
-                    <form>
-                        <p>
-                            Search
-                            <input type="search">
-                            <input type="image" src="img/search.png">
-                        </p>
-                    </form>
-                </div>
-            </div>
-        </header>
-        <div class="clearfix">
-            <main>
-                <h2>From the blog</h2>
-                <article>
-                    <h1>Blog Post Name Here</h1>
-                    <img src="img/blog-1.jpg">
-                    <p>October 15th 2010 <i>|</i> <a href="#">7 comments</a></p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat, nulla vitae
-                        accumsan feugiat, odio nisi tristique odio, sit amet dictum quam augue vel urna.
-                        Proin eleifend, erat eu rhoncus suscipit, nisl velit pharetra leo  <a href="#">Continue Reading...</a>
-                    </p>
-                </article>
-
-                <article>
-                    <h1>Blog Post Name Here</h1>
-                    <img src="img/blog-2.jpg">
-                    <p>October 15th 2010 <i>|</i> <a href="#">7 comments</a></p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat, nulla vitae
-                        accumsan feugiat, odio nisi tristique odio, sit amet dictum quam augue vel urna.
-                        Proin eleifend, erat eu rhoncus suscipit, nisl velit pharetra leo  <a href="#">Continue Reading...</a>
-                    </p>
-                </article>
-
-                <a href="#">The blog</a>
-            </main>
-            <aside>
-                <div class="about">
-                    <div>
-                        <ul>
-                            <li><a href="#">Comments</a></li>
-                            <li><a href="#">Categories</a></li>
-                            <li><a href="#">Archives</a></li>
-                        </ul>
-                    </div>
-                    <h2>Who we are</h2>
-                    <a href=""><img src="img/about.jpg"></a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur
-                        accumsan feugiat... <a href="#">Read More!</a>
-                    </p>
-                </div>
-                <div class="sponsors">
-                    <h2>Sponsors</h2>
-                    <a href="#"><img src="img/sponsor-1.jpg"></a>
-                    <a href="#"><img src="img/sponsor-2.jpg"></a>
-                </div>
-            </aside>
         </div>
-        <footer>
-            <div class="big-footer">
-                <div class="footer-form">
-                    <h2>Get a free qute</h2>
-                    <form>
-                        <input type="text" name="name" placeholder="Your name">
-                        <input type="text" name="last-name" placeholder="Last name">
-                        <textarea name="message" placeholder="Bla-bla-bla..."></textarea>
-                        <input type="email" name="email" placeholder="Your E-mail address">
-                        <input type="submit" name="submit" value="Submit">
-                    </form>
-                </div>
-                <div class="footer-project">
-                    <h2>Our recent projects</h2>
-                    <div class="project-item-group">
-                        <a href="#"><img src="img/project-1.jpg"></a>
-                        <a href="#"><img src="img/project-2.jpg"></a>
-                        <a href="#"><img src="img/project-3.jpg"></a>
-                        <a href="#"><img src="img/project-4.jpg"></a>
+    </header>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav__wrap">
+                <ul class="nav__menu list">
+                    <li class="nav__menu-item">Home</li>
+                    <li class="nav__menu-item">About</li>
+                    <li class="nav__menu-item">Portfolio</li>
+                    <li class="nav__menu-item">Blog</li>
+                    <li class="nav__menu-item">Contact</li>
+                </ul>
+
+                <form class="search" action="#" method="#">
+                    <span class="hidden-text">Enter a search term</span>
+                    <input class="search__field" type="search" name="query">
+                    <input class="search__btn" type="image" name="image" src="./img/search.png">
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section class="welcome">
+        <div class="container">
+            <div class="welcome__wrapper">
+                <div class="welcome__inner">
+                    <h1>Welcome to our site</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat, nulla vitae
+                        accumsan feugiat, odio nisi tristique odio, sit amet dictum quam augue vel urna.
+                        Proin eleifend, erat eu rhoncus suscipit, nisl velit pharetra leo</p>
+                    <div class="welcome__btns">
+                        <div class="welcome__btn">
+                            <a href="#"><span>Learn more</span></a>
+                        </div>
+                        <div class="welcome__btn">
+                            <a href="#"><span>Our work</span></a>
+                        </div>
                     </div>
-                    <a href="#">Portfolio</a>
+
                 </div>
-                <div class="footer-twitter-posts">
-                    <h2>Twitter stream</h2>
-                    <div class="project-item-group">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur
-                            accumsan feugiat! <span>4 Minutes Ago..</span>
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur
-                            accumsan feugiat! <span>4 Minutes Ago..</span>
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur
-                            accumsan feugiat! <span>4 Minutes Ago..</span>
-                        </p>
-                    </div>
-                    <a href="#">Follow us</a>
+
+                <div class="welcome__img">
+                    <img src="img/welcome-1.jpg" alt="">
                 </div>
             </div>
-            <div class="small-footer">
-                <p class="copyright">All Copyrights Reserved | 2010 | WebsiteName</p>
-                <nav class="footer-nav">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+        </div>
+    </section>
+
+    <main class="main__page">
+        <div class="main__container">
+            <section class="blog">
+                <div class="blog__inner">
+                    <h2 class="section__title">From the blog</h2>
+                    <div class="blog__posts">
+                        <div class="blog__post">
+                            <div class="blog__post-title">
+                                <span>Blog Post Name Here</span>
+                            </div>
+                            <div class="blog__post-img">
+                                <img src="img/blog-1.jpg" alt="blog">
+                            </div>
+                            <div class="blog__post-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat, nulla vitae
+                                    accumsan feugiat, odio nisi tristique odio, sit amet dictum quam augue vel urna.
+                                    Proin eleifend, erat eu rhoncus suscipit, nisl velit pharetra leo Continue
+                                    Reading...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="blog__post">
+                            <div class="blog__post-title">
+                                <span>Blog Post Name Here</span>
+                            </div>
+                            <div class="blog__post-img">
+                                <img src="img/blog-2.jpg" alt="blog">
+                            </div>
+                            <div class="blog__post-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat, nulla vitae
+                                    accumsan feugiat, odio nisi tristique odio, sit amet dictum quam augue vel urna.
+                                    Proin eleifend, erat eu rhoncus suscipit, nisl velit pharetra leo Continue
+                                    Reading...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__btn btn">
+                        <a href="#"><span>The blog</span></a>
+                    </div>
+
+                </div>
+
+            </section>
+            <div class="sidebar">
+                <div class="sidebar__inner">
+                    <div class="comments">
+                        fgnfnf
+                    </div>
+                    <div class="about">
+                        <h3>Who we are</h3>
+                        <div class="about__img">
+                            <img src="img/about.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="sponsors">
+                        <h3>Sponsors</h3>
+                        <div class="sponsors__item">
+                            <img src="img/sponsor-1.jpg" alt="">
+                        </div>
+                        <div class="sponsors__item">
+                            <img src="img/sponsor-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="widgets">
+            <div class="container">
+                <div class="widgets__wrap">
+                    <div class="widgets__item">
+                        <div class="widgets__quote">
+                            <h3>Get a free quote</h3>
+                            <div class="widgets__quote-wrap">
+                                <input type="text" placeholder="Your name">
+                                <input type="text" placeholder="Last name">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Bla-bla-bla..."></textarea>
+                                <input type="text" placeholder="Your e-mail address">
+                            </div>
+                            <div class="widgets__btn btn">
+                                <a href="#"><span>Submit</span></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="widgets__item">
+                        <div class="widgets__projects">
+                            <h3>Our recent projects</h3>
+                            <div class="widgets__projects-wrap">
+                                <div class="widgets__projects-img">
+                                    <img src="img/project-1.jpg" alt="icon-project">
+                                </div>
+                                <div class="widgets__projects-img">
+                                    <img src="img/project-2.jpg" alt="icon-project">
+                                </div>
+                                <div class="widgets__projects-img">
+                                    <img src="img/project-3.jpg" alt="icon-project">
+                                </div>
+                                <div class="widgets__projects-img">
+                                    <img src="img/project-4.jpg" alt="icon-project">
+                                </div>
+
+                            </div>
+                            <div class="widgets__btn btn">
+                                <a href="#"><span>Portfolio</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widgets__item">
+                        <div class="widgets__twitter">
+                            <h3>Twitter stream</h3>
+                            <div class="widgets__twitter-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque hic ullam, recusandae
+                                    id nam saepe rerum molestias? Perspiciatis sint sed tempora aliquam nostrum tenetur
+                                    eaque, neque quaerat quidem quae eos?</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque hic ullam, recusandae
+                                    id nam saepe rerum molestias? Perspiciatis sint sed tempora aliquam nostrum tenetur
+                                    eaque, neque quaerat quidem quae eos?</p>
+                            </div>
+                            <div class="widgets__btn btn">
+                                <a href="#"><span>Follow us</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__copyright">
+                    <span>All Copyrights Reserved | 2010 | WebsiteName</span>
+                </div>
+                <div class="footer__nav">
+                    <ul class="list footer__menu">
+                        <li class="footer__menu-item"><a href="#">Home</a></li>
+                        <li class="footer__menu-item"><a href="#">About</a></li>
+                        <li class="footer__menu-item"><a href="#">Portfolio</a></li>
+                        <li class="footer__menu-item"><a href="#">Blog</a></li>
+                        <li class="footer__menu-item"><a href="#">Contact</a></li>
                     </ul>
-                </nav>
+                </div>
             </div>
-        </footer>
-    </div><!--wrapper-page END-->
+        </div>
+    </footer>
+
+
 </body>
+
 </html>

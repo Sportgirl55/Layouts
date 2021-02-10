@@ -143,44 +143,6 @@ h3 {
   color: var(--black);
 }
 
-
-.hamb {
-  display: none;
-  position: relative;
-  height: 40px;
-  width: 40px;
-  padding: 0;
-  border: none;
-  background: var(--white);
-}
-
-.hamb__line {
-  display: block;
-  height: 3px;
-  width: 100%;
-  background-color: var(--black);
-}
-
-.hamb__line::before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  display: block;
-  height: 3px;
-  width: 100%;
-  background-color: var(--black);
-}
-
-.hamb__line::after {
-  content: "";
-  position: absolute;
-  bottom: 5px;
-  display: block;
-  height: 3px;
-  width: 100%;
-  background-color: var(--black);
-}
-
 /* MAIN  */
 
 .hero {
@@ -350,6 +312,7 @@ h3 {
 .socials__wrap div {
   padding: 0 7px;
 }
+
 /* FOOTER */
 
 .footer {
@@ -392,6 +355,64 @@ h3 {
 
 .footer__logo {
   max-width: 120px;
+}
+
+/* BURGER */
+
+.burger {
+  display: none;
+  position: absolute;
+  right: 25px;
+  top: auto;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.burger span,
+.burger span:before,
+.burger span:after {
+  width: 100%;
+  position: absolute;
+  height: 10px;
+  background: #333;
+  display: block;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.burger span:before {
+  content: "";
+  top: -20px;
+  transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.burger span {
+  top: 20px;
+}
+
+.burger span:after {
+  content: "";
+  bottom: -20px;
+  transition: bottom 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.burger span.active:before {
+  content: "";
+  top: 0px;
+  transform: rotate(45deg);
+  transition: top 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.burger span.active:after {
+  content: "";
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.burger span.active {
+  background: rgba(255, 255, 255, 0);
 }
 
 /* MEDIA QUERIES */
@@ -467,6 +488,28 @@ h3 {
 }
 
 @media (max-width: 480px) {
+  .burger {
+    display: block;
+  }
+
+  .header__menu,
+  .header__logo {
+    display: none;
+  }
+
+  .color {
+    background: linear-gradient(to right, #f3f3f3, #cf6d1a);
+  }
+
+  .header__menu-item {
+    margin: 10px;
+    font-size: 18px;
+  }
+
+  .open {
+    display: block;
+  }
+
   .hero__example {
     width: 90%;
     margin: auto;
@@ -482,16 +525,17 @@ h3 {
     flex-direction: column;
   }
 
-  .blog h3 {
+  .blog h3,
+  .portfolio h2 {
     text-align: center;
+  }
+
+  .blog p {
+    text-align: justify;
   }
 
   .portfolio__item {
     width: 100%;
-  }
-
-  .portfolio h2 {
-    text-align: center;
   }
 
   .socials {
@@ -512,17 +556,6 @@ h3 {
 }
 
 @media (max-width: 375px) {
-
-  .hamb {
-    display: block;
-    margin-right: 25px;
-  }
-
-  .header__menu {
-    display: none;
-  }
-
-
   .hero__title {
     font-size: 45px;
     padding: 50px 20px;
