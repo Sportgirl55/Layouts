@@ -13,7 +13,7 @@
 <body>
     <header class="header">
         <div class="container header__wrap">
-            <div class="header__logo">
+            <div class="header__logo up">
                 <img src="img/logo.png" alt="logo">
             </div>
             <div class="header__nav">
@@ -26,22 +26,21 @@
                 </ul>
             </div>
 
-            <form class="header__search" action="#" method="#">
+            <form class="header__search open" action="#" method="#">
                 <span class="hidden-text">Enter a search term</span>
                 <input class="header__search-field" type="search" name="query" placeholder="search term...">
-                
+
                 <input class="header__search-btn" type="image" name="image" src="./img/search.png">
                 <!-- <span class="hidden-text">Сlick on the button to start searching</span> -->
                 <!-- куда вставить скрытый текст для кнопки поиска? Если бы это была просто кнопка, то тогда бы получилось, а как это сделать с input type="image"? -->
-                    </form>
-            <button class="hamb" type="button">
-                <span class="hamb__line">
-                    <span class="visually-hidden">Открыть меню</span>
-                </span>
-            </button>
-            <!-- <button class="close-menu visually-hidden" type="button">
-                <span class="visually-hidden">Закрыть меню</span>
-            </button> -->
+            </form>
+
+            <div class="burger">
+                <span></span>
+            </div>
+            <span class="visually-hidden">открыть меню</span>
+
+
         </div>
     </header>
     <main class="main__page">
@@ -199,6 +198,7 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
