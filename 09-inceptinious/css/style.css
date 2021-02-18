@@ -1,0 +1,312 @@
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../fonts/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/arial.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background: #f4f4f4; */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+:root {
+  --black: #202831;
+  --white: #eeeeee;
+
+  /* --gray: #5d5d5d;
+  --light-gray: #bfbfbf; */
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #b55454;
+  text-transform: uppercase;
+}
+
+.header,
+.footer {
+  color: var(--white);
+  font-size: 12px;
+}
+
+.list {
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* HEADER  */
+.header {
+  background: var(--black);
+}
+
+nav {
+  outline: 1px solid red;
+}
+
+.list__item a {
+  font-size: 12px;
+  color: #979a9e;
+  padding: 10px;
+}
+
+.socials {
+  outline: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.socials__facebook,
+.socials__twitter,
+.socials__rss {
+  display: flex;
+  outline: 1px solid greenyellow;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* MAIN  */
+
+.main__page {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* HERO */
+
+.hero {
+  background: #232b37;
+  outline: 1px solid red;
+  padding: 30px;
+}
+
+.hero__wrap-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__widgets .logo {
+  max-width: 130px;
+  height: ;
+}
+
+.hero__title {
+  font-family: "Myriad Pro";
+  color: #c9bfaa;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.hero__list {
+  font-family: "Arial";
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.hero__slider {
+  position: relative;
+  outline: 1px solid red;
+  min-height: 360px;
+}
+
+.hero__content {
+  outline: 1px solid yellow;
+  color: #b1a794;
+}
+
+.hero__content-logos {
+  display: flex;
+}
+
+.hero__wrap-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.slider__ipad {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: auto;
+  bottom: 0;
+  right: 0;
+}
+
+/* FEATURES  */
+
+.main__excerpt {
+  display: flex;
+}
+
+.main__content img {
+  height: 100%;
+}
+
+.main__features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main__features-item {
+  outline: 1px solid red;
+  width: calc(100% / 3 - 15px);
+  height: 175px;
+  margin-bottom: 20px;
+}
+
+.main__title {
+  font-weight: bold;
+  font-size: 22px;
+  text-transform: uppercase;
+
+}
+
+.item__text p {
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Arial";
+}
+
+.item__box img {
+  padding: 10px;
+  float: left;
+}
+
+.main__quota {
+  display: flex;
+  outline: 1px solid red;
+}
+
+.main__testimonials {
+  display: flex;
+  outline: 1px solid red;
+}
+
+/* WIDGETS */
+
+.main__widgets {
+  background: #262f3a;
+}
+
+.main__widgets-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.main__widgets-item {
+  outline: 1px solid blue;
+  height: 230px;
+}
+
+.projects__wrap {
+  display: grid;
+  grid-template-columns: 82px 82px ;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+ 
+}
+
+.main__widgets p,
+.main__widgets label,
+.posts__items a {
+  color: #bcbcbc;
+  font-size: 12px;
+}
+
+.main__widgets-item img {
+  height: auto;
+}
+
+.btn {
+  background: #ac5454;
+  border-radius: 5px;
+  padding: 7px 15px;
+  color: #ededed;
+ }
+
+ .input__item input{
+   background: #1c232d;
+ }
+
+
+
+
+/* FOOTER  */
+
+.footer {
+  background: #28303a;
+}
+
+.footer__copyright {
+}
+
+.footer__copyright a {
+  color: #c9bfa9;
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
