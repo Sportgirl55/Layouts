@@ -5,83 +5,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout-1</title>
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="hero">
         <div class="container">
             <header class="header">
-                <div class="header__logo">
-                    <span>MoGo</span>
-                </div>
                 <div class="header__wrapper">
-                    <nav class="header__nav">
-                        <ul class="header__menu list">
-                            <li>About</li>
-                            <li>Services</li>
-                            <li>Work</li>
-                            <li>Blog</li>
-                            <li>Contact</li>
-                        </ul>
-                    </nav>
-                    <div class="controls">
-                        <img src="img/search.png" alt="">
-                        <img src="img/sale.png" alt="">
+                    <div class="header__logo">
+                        <a href="#"><img src="img/MoGo.png" alt="logo"></a>
+                    </div>
+                    <div class="header__nav-wrap">
+                        <nav class="header__nav">
+                            <ul class="header__menu list">
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#about">Work</a></li>
+                                <li><a href="#widgets">Blog</a></li>
+                                <li><a href="#widgets">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="controls">
+                            <a href="#"><img src="img/search.png" alt="search-icon"></a>
+                            <a href="#"><img src="img/sale.png" alt="sale-icon"></a>
+                        </div>
                     </div>
                 </div>
             </header>
             <span class="hero__text">Creative Template</span>
-            <h1>Welcome to MoGo</h1>
-            <a class="hero__btn" href="#"><span>Learn more</span></a>
+            <h1 class="hero__title">Welcome to MoGo</h1>
+            <div class="btn">
+                <a class="hero__btn" href="#">Learn more</a>
+            </div>
+
             <ul class="hero__menu list">
-                <li>Intro</li>
-                <li>Work</li>
-                <li>About</li>
-                <li>Contacts</li>
+                <li><a href="#"><span>01</span>Intro</a></li>
+                <li><a href="#about"><span>02</span>Work</a></li>
+                <li><a href="#about"><span>03</span>About</a></li>
+                <li><a href="#widgets"><span>04</span>Contacts</a></li>
             </ul>
         </div>
     </div>
     <main>
 
-        <section class="about">
-            <h2 class="section__title">Story about us</h2>
+        <section class="about" id="about">
+            <div class="title__box">
+                <span class="pre-section__title">What we do</span>
+                <h2 class="section__title">Story about us</h2>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+
             <div class="container">
                 <div class="about__items">
-                    <div class="about__item">1</div>
-                    <div class="about__item">2</div>
-                    <div class="about__item">3</div>
+                    <div class="about__item">
+                        <img src="img/about/about-1.jpg" alt="">
+                    </div>
+                    <div class="about__item">
+                        <img src="img/about/about-2.jpg" alt="">
+                    </div>
+                    <div class="about__item">
+                        <img src="img/about/about-3.jpg" alt="">
+                    </div>
                 </div>
             </div>
 
         </section>
         <div class="digits">
             <div class="container digits__wrapper">
-                <div class="digits__item">56</div>
-                <div class="digits__item">98</div>
-                <div class="digits__item">32</div>
-                <div class="digits__item">98</div>
-                <div class="digits__item">25</div>
+                <div class="digits__item">
+                    <span class="digits__item-number">42</span>
+                    <span class="digits__item-text">Web design projects</span>
+                </div>
+                <div class="digits__item">
+                    <span class="digits__item-number">123</span>
+                    <span class="digits__item-text">Happy client</span>
+                </div>
+                <div class="digits__item">
+                    <span class="digits__item-number">15</span>
+                    <span class="digits__item-text">Award winner</span>
+                </div>
+                <div class="digits__item">
+                    <span class="digits__item-number">99</span>
+                    <span class="digits__item-text">Cup of coffee</span>
+                </div>
+                <div class="digits__item">
+                    <span class="digits__item-number">24</span>
+                    <span class="digits__item-text">Members</span>
+                </div>
             </div>
 
         </div>
-        <section class="services">
-            <h2 class="section__title">Amazing services</h2>
+        <section class="services" id="services">
+            <div class="title__box">
+                <span class="pre-section__title">We work with</span>
+                <h2 class="section__title">Amazing services</h2>
+            </div>
+
             <div class="container">
                 <div class="services__wrapper">
-                    <div class="services__item"></div>
-                    <div class="services__item"></div>
-                    <div class="services__item"></div>
-                    <div class="services__item"></div>
-                    <div class="services__item"></div>
-                    <div class="services__item"></div>
+                    <div class="services__item">
+                        <div class="services__icon">
+                            <img src="img/services/alarm.png" alt="">
+                        </div>
+                        <div class="text__wrap">
+                            <h3>Photography</h3>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor.</p>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <div class="services__icon">
+                            <img src="img/services/line-grath.png" alt="">
+                        </div>
+                        <div class="text__wrap">
+                            <h3>Web design</h3>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor.</p>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <div class="services__icon">
+                            <img src="img/services/computer.png" alt="">
+                        </div>
+                        <div class="text__wrap">
+                            <h3>Creativity</h3>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor.</p>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <div class="services__icon">
+                            <img src="img/services/book.png" alt="">
+                        </div>
+                        <div class="text__wrap">
+                            <h3>Seo</h3>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor.</p>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <div class="services__icon">
+                            <img src="img/services/home.png" alt="">
+                        </div>
+                        <div class="text__wrap">
+                            <h3>HTML/CSS</h3>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor.</p>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <div class="services__icon">
+                            <img src="img/services/image.png" alt="">
+                        </div>
+                        <div class="text__wrap">
+                            <h3>Digital</h3>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="widgets container">
+        <div class="widgets container" id="widgets">
             <div class="widgets__mogo">
                 MoGo
             </div>
@@ -93,7 +189,7 @@
             </div>
         </div>
         <div class="copyright">
-            <span>© 2016 MoGo free PSD template by Laaqiq</span>
+            <span>&copy; 2016 MoGo free PSD template by <a href="#">Laaqiq</a></span>
         </div>
     </footer>
 </body>
