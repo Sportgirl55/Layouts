@@ -3,10 +3,10 @@
 }
 
 :root {
-    /* --footer-color: #8d8d8d;
-    --black: #3d3d3d;
-    --main-blue: #76abd4;*/
+    --black: #333333;
+    --blue: #95e1d3;
     --white: #ffffff;
+    --gray: #999999;
 }
 
 body {
@@ -19,6 +19,10 @@ a {
     transition: color 0.3s ease;
     color: var(--white);
     text-transform: uppercase;
+}
+
+a:hover {
+    opacity: 0.8;
 }
 
 img {
@@ -71,8 +75,20 @@ h2 {
 }
 
 .container {
-    width: 1210px;
+    max-width: 1210px;
     margin: auto;
+    padding: 0 15px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /* Header */
@@ -129,7 +145,6 @@ header {
 /* HERO  */
 
 .hero {
-    outline: 1px solid red;
     background-image: url(../img/bg-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -218,6 +233,10 @@ header {
     margin-bottom: 160px;
 }
 
+.btn:hover {
+    opacity: 0.8;
+}
+
 .hero__btn {
     text-align: center;
     border: 3px solid var(--white);
@@ -228,7 +247,6 @@ header {
 /* MAIN */
 
 main {
-    outline: 1px solid red;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -268,17 +286,62 @@ main {
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     line-height: 24px;
+    color: var(--gray);
 }
 
-.about__items {
+.about__wrap {
     display: flex;
     justify-content: space-between;
 }
 
 .about__item {
-    min-width: 380px;
+    outline: 1px solid red;
+    background: var(--blue);
+    width: calc(100% / 3 - 25px);
+    /* position: relative; */
+    z-index: 1;
+}
+/* 
+.about__item img {
+    height: 100%;
+} */
 
-    outline: 1px solid black;
+.about__item:hover {
+    transform: translate(-10px, -10px);
+    transition: all 0.2s ease-in-out;
+}
+
+.super__team {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.super__team span {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.super__team img {
+    width: 30px;
+    height: auto;
+}
+
+.about__item:hover .super__team {
+    background: linear-gradient(to bottom, #e78082, #f1da8a);
+    z-index: 100;
+    opacity: 0.8;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .title__box {
@@ -309,7 +372,7 @@ main {
 }
 
 .digits__item:not(:last-child) {
-    border-right: 1px solid #b5eae0;
+    border-right: 1px solid var(--blue);
 }
 
 .digits__item-number {
@@ -325,6 +388,11 @@ main {
 
 h3 {
     text-transform: uppercase;
+    font-size: 14px;
+}
+
+.services {
+    margin: 105px 0 35px;
 }
 
 .services__wrapper {
@@ -335,9 +403,19 @@ h3 {
 .services__item {
     width: calc(100% / 3 - 20px);
     display: flex;
+    padding-bottom: 50px;
+}
 
-    outline: 1px solid black;
-    margin: 10px;
+.services__wrapper .services__item:nth-child(6n + 4),
+.services__wrapper .services__item:nth-child(6n + 5),
+.services__wrapper .services__item:nth-child(6n + 6) {
+    padding-top: 50px;
+}
+
+.services__wrapper .services__item:nth-child(6n + 1),
+.services__wrapper .services__item:nth-child(6n + 2),
+.services__wrapper .services__item:nth-child(6n + 3) {
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .services__icon {
@@ -349,26 +427,159 @@ h3 {
 /* FOOTER */
 
 .footer {
-    outline: 1px solid green;
     background: #f8f8f8;
     min-height: 100px;
 }
 
 .widgets {
     display: flex;
+    padding: 75px 15px 50px;
+    border-bottom: 1px solid #e5e5e5;
 }
 
-.widgets__mogo,
-.widgets__blogs,
-.widgets__instagram {
-    width: calc(100% / 3 - 20px);
-    height: 250px;
+.widgets > div:not(:first-child) {
+    margin-left: 30px;
+}
 
-    outline: 1px solid black;
-    margin: 10px;
+.widgets__mogo {
+    flex: 1;
+}
+
+.widgets__mogo-logo {
+    margin-bottom: 30px;
+}
+
+.widgets__mogo span {
+    color: var(--black);
+    font-size: 14px;
+}
+
+.widgets__mogo-text {
+    margin-bottom: 15px;
+}
+
+.followers span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.widgets__blogs {
+    max-width: 380px;
+}
+
+.footer__socials-list {
+    display: flex;
+    align-items: center;
+}
+
+.footer__socials-list li {
+    margin-left: 15px;
+}
+
+.footer__socials {
+    display: flex;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.footer input {
+    outline: 1px solid #e5e5e5;
+    background: var(--white);
+    padding: 15px;
+    outline: 1px solid red;
+    font-style: italic;
+    color: #e5e5e5;
+    max-width: 230px;
+}
+
+.btn__subscribe {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--white);
+    background: var(--blue);
+    padding: 15px 30px;
+    outline: 1px solid blueviolet;
+}
+
+.widgets__blogs-item h4 {
+    margin-bottom: 10px;
+}
+
+.widgets__blogs-item h4 a {
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 18px;
+    margin-bottom: 10px;
+    color: var(--black);
+}
+
+.widgets__blogs-item time,
+.widgets__instagram a {
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: italic;
+    color: var(--gray);
+}
+
+.widgets__blogs-item {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.blogs__item-img {
+    height: fit-content;
+}
+
+.blogs__item-img img {
+    min-width: 120px;
+}
+
+.blogs__item-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.widgets__instagram {
+    max-width: 270px;
+}
+
+.widgets__instagram-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.widgets__instagram-box img {
+    width: calc(100% / 3 - 2px);
+    margin-bottom: 5px;
+}
+
+.widgets__instagram a {
+    text-transform: none;
+    font-style: italic;
+    color: var(--black);
 }
 
 .copyright {
     display: flex;
     justify-content: center;
+    padding: 24px 0;
+}
+
+.copyright a {
+    color: #f49f9f;
+    font-weight: bold;
+    text-transform: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 992px) {
+    .hero__title {
+        font-size: 90px;
+        line-height: 80px;
+    }
 }
