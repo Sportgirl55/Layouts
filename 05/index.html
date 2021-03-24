@@ -14,7 +14,7 @@
     <header class="header">
         <div class="container header__wrap">
             <div class="header__logo up">
-                <img src="img/logo.png" alt="logo">
+                <a href="#"><img src="img/logo.png" alt="logo"></a>
             </div>
             <div class="header__nav">
                 <ul class="header__menu list">
@@ -27,11 +27,10 @@
             </div>
 
             <form class="header__search open" action="#" method="#">
-                <span class="hidden-text">Enter a search term</span>
+                <span class="visually-hidden">Enter a search term</span>
                 <input class="header__search-field" type="search" name="query" placeholder="search term...">
-
                 <input class="header__search-btn" type="image" name="image" src="./img/search.png">
-                <!-- <span class="hidden-text">Сlick on the button to start searching</span> -->
+                <!-- <span class="visually-hidden">Сlick on the button to start searching</span> -->
                 <!-- куда вставить скрытый текст для кнопки поиска? Если бы это была просто кнопка, то тогда бы получилось, а как это сделать с input type="image"? -->
             </form>
 
@@ -39,8 +38,6 @@
                 <span></span>
             </div>
             <span class="visually-hidden">открыть меню</span>
-
-
         </div>
     </header>
     <main class="main__page">
@@ -60,8 +57,8 @@
                             <img src="./img/image.png" alt="icon-image">
                         </div>
                         <p class="cards__item-desc">Aenean consequat at tortor ac feugiat. Praesent at tristique ipsum.
-                            Aenean consequat at tortor ac Aenean consequat at tortor ac Cras henrit volutpat vulputate.
-                            Aenean consequat at tortor ac Aenean consequat at tortor ac Aenean consequat at tortor ac
+                            <!-- Aenean consequat at tortor ac Aenean consequat at tortor ac Cras henrit volutpat vulputate. -->
+
                         </p>
                     </div>
                     <a href="#"><span>more info</span></a>
@@ -183,15 +180,18 @@
                         <li><a href="#">Vestibulum at sapie</a></li>
                     </ul>
                 </div>
-                <address class="contacts">
+                <div class="address__wrap">
                     <h3>Contact us</h3>
-                    <div class="contacts__inner">
-                        <a class="contacts__phone" href="#"><span>588 125 4666</span></a>
-                        <a class="contacts__email" href="#"><span>support@yourdomain.com</span></a>
-                        <span>5 Place Road Park</span>
-                        <span>New York 24856</span>
-                    </div>
-                </address>
+                    <address class="contacts">
+                        <div class="contacts__inner">
+                            <a class="contacts__phone" href="#"><span>588 125 4666</span></a>
+                            <a class="contacts__email" href="#"><span>support@yourdomain.com</span></a>
+                            <span>5 Place Road Park</span>
+                            <span>New York 24856</span>
+                        </div>
+                    </address>
+                </div>
+
                 <div class="footer__logo">
                     <a href="#"><img src="img/paypal.png" alt="Paypal"></a>
                 </div>
