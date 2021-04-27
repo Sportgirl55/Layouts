@@ -88,9 +88,15 @@ h2 {
     overflow: hidden;
 }
 
+.open[class] {
+    display: flex;
+    flex-direction: column;
+}
+
 /* hEADER */
 
 header {
+    position: relative;
     margin-bottom: 120px;
 }
 
@@ -102,12 +108,13 @@ header {
 }
 
 .header__logo {
-    min-width: 90px;
+    position: absolute;
+    max-width: 90px;
 }
 
 .header__nav-wrap {
     display: flex;
-    position: relative;
+    margin-left: auto;
 }
 
 .header__nav {
@@ -133,23 +140,40 @@ header {
     align-items: center;
 }
 
-.controls a {
+.controls a,
+.controls__search {
     margin-left: 40px;
-}
-
-.controls img {
     width: 17px;
-    height: 17px;
 }
 
+.controls a:hover, 
 .controls img:hover {
     transform: scale(1.2);
 }
 
+.controls__search {
+    display: flex;
+    background: transparent;
+}
+
+input[type="search"] {
+    display: none;
+    width: 150px;
+    background: transparent;
+    outline: 1px solid var(--white);
+    border: none;
+    color: var(--black);
+}
+
+/* .controls__search:hover input{
+    display: flex;
+    margin-left: -150px; 
+} */
+
 .burger {
     display: none;
     position: absolute;
-    right: 25px;
+    right: 10px;
     top: auto;
     width: 50px;
     height: 50px;
@@ -381,14 +405,13 @@ main {
 }
 
 .about__item {
+    display: block;
     background: var(--blue);
     width: calc(100% / 3 - 15px);
     position: relative;
 }
 
-.about__item:hover .about__item-wrap {
-    position: absolute;
-    z-index: 1;
+.about__item:hover .about__item-inner {
     transform: translate(-10px, -10px);
     transition: all 0.2s ease-in-out;
 }
@@ -396,7 +419,6 @@ main {
 .super__team {
     display: none;
     position: absolute;
-    z-index: 2;
     width: 100%;
     height: 100%;
 
@@ -486,7 +508,7 @@ h3 {
 }
 
 .services__item {
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 10px);
     display: flex;
     padding-bottom: 50px;
     padding-top: 44px;
@@ -542,6 +564,7 @@ h3 {
 
 .widgets__mogo-logo {
     margin-bottom: 35px;
+    max-width: 130px;
 }
 
 .widgets__mogo-text {
@@ -779,12 +802,12 @@ input::placeholder {
     }
 
     .header__nav-wrap {
-        display: none;
+        display: none; 
         margin: auto;
+    }
 
-        position: absolute;
-        left: 45%;
-        top: 4%;
+    .header__nav {
+        margin-right: 0;
     }
 
     .hero__menu li:not(:first-child) {
@@ -807,7 +830,7 @@ input::placeholder {
     }
 
     .services__item {
-        width: calc(100% / 2);
+        width: calc(100% / 2 - 10px);
         border-bottom: 1px solid #e5e5e5;
     }
 
@@ -827,12 +850,13 @@ input::placeholder {
         margin: auto;
     }
 
-    .open {
-        display: flex;
-    }
-
     .burger {
         display: block;
+        top: 10px; 
+    }
+
+    .header__logo {
+        top: 20px;
     }
 
     .controls {
@@ -846,7 +870,6 @@ input::placeholder {
     }
 
     .header__menu li {
-        /* margin-right: 0; */
         margin-bottom: 15px;
         font-size: 18px;
     }
@@ -862,10 +885,6 @@ input::placeholder {
 }
 
 @media (max-width: 600px) {
-    header {
-        margin-bottom: 150px;
-    }
-
     .about {
         padding-right: 0;
     }
