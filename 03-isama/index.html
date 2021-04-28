@@ -8,10 +8,17 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.pixlayout.0.9.8.js"></script>
+    <!-- <script type="text/javascript">
+        $(function () {
+            $.pixlayout({ clip: true, src: "./03-Portal.jpg", show: true, center: true, top: 0, left: 0, pervious: false });
+        });
+    </script> -->
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
 
         <div class="header__up">
             <div class="container">
@@ -62,8 +69,9 @@
                         <div class="header__address-item">
                             <a href="#"><img src="img/header/phone.png" alt="phone"></a>
                         </div>
-                        <div class="header__address-item">
+                        <div class="header__address-item geo" data-tooltip="Saudi Arabia. Alreyadah">
                             <a href="#"><img src="img/header/geo.png" alt="geotag"></a>
+                            <!-- <div class="tooltip" data-tooltip="Saudi Arabia. Alreyadah"></div> -->
                         </div>
                         <div class="header__address-item">
                             <a href=""><img src="img/header/mail.png" alt="mail"></a>
@@ -109,13 +117,24 @@
             <div class="hero__wrap">
                 <h1 class="hero__title">Let’s draw some arts</h1>
                 <span>make your business much better</span>
-
             </div>
             <div class="container">
                 <div class="hero__designes">
-                    <img src="img/design.png" alt="">
-                    <img src="img/design2.png" alt="">
-                    <img src="img/next.png" alt="">
+                    <div class="hero__designes-item green">
+                        <button class="hero__designes-like">
+                            <img src="img/icon-heart-green.png" alt="">
+                            <span>Like</span>
+                        </button>
+                    </div>
+                    <div class="hero__designes-item yellow">
+                        <button class="hero__designes-like">
+                            <img src="img/icon-heart.png" alt="">
+                            <span>Like</span>
+                        </button>
+                    </div>
+                    <button class="hero__designes-btn" type="button">
+                        <img src="img/next.png" alt="">
+                    </button>
                 </div>
             </div>
 
@@ -168,12 +187,12 @@
 
         <section class="action">
             <div class="container">
-                <div class="title__wrap">
+                <div class="title__wrap action__title">
                     <div class="title__pic">
                         <img src="img/projects/work-title.png" alt="">
                     </div>
                     <div class="title__text">
-                        <h2 class="section__title">What we do?</h2>
+                        <h2 class="section__title">What we do ?</h2>
                         <span>Everything you need to do business intelligence right.</span>
                     </div>
                 </div>
@@ -246,16 +265,19 @@
             </div>
         </section>
         <section class="projects">
-            <div class="title__wrap">
-                <div class="title__pic">
-                    <img src="img/projects/project-title.png" alt="">
-                </div>
-                <div class="title__text">
-                    <h2 class="section__title">Our Projects</h2>
-                    <span>Some of our awesome work Proud of doing
-                        great works for our clients</span>
+            <div class="container">
+                <div class="title__wrap projects__title">
+                    <div class="title__pic">
+                        <img src="img/projects/project-title.png" alt="">
+                    </div>
+                    <div class="title__text">
+                        <h2 class="section__title">Our Projects</h2>
+                        <span>Some of our awesome work Proud of doing
+                            great works for our clients</span>
+                    </div>
                 </div>
             </div>
+
             <div class="project__tags">
                 <div class="project__tag">
                     <a href="#">All</a>
@@ -378,8 +400,12 @@
                         </div>
                     </div>
                 </div>
+              
             </div>
         </section>
+        <div class="btn-up" onclick="return up()" >
+            <img src="img/scroll-up.png" alt="Scroll up">
+        </div>
     </main>
     <footer class="footer">
         <div class="container flex">
@@ -427,6 +453,7 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
