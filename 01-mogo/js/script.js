@@ -4,7 +4,8 @@ const burger = document.querySelector('.burger');
 const menu = document.querySelector('.header__nav-wrap');
 const header = document.querySelector('.header');
 
-const search = document.querySelector('.controls__search');
+const blockSearch = document.querySelector('.controls');
+const searchBtn = document.querySelector('.controls button');
 
 
 burger.addEventListener('click', function () {
@@ -14,6 +15,6 @@ burger.addEventListener('click', function () {
 })
 
 
-search.addEventListener('click', () => {
-    input.classList.add('open');
+searchBtn.addEventListener('click', (e) => {
+    blockSearch.classList.add('open');
 })

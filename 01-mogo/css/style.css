@@ -100,6 +100,10 @@ header {
     margin-bottom: 120px;
 }
 
+header.open {
+    padding-top: 80px;
+}
+
 .header__wrapper {
     display: flex;
     align-items: center;
@@ -108,7 +112,6 @@ header {
 }
 
 .header__logo {
-    position: absolute;
     max-width: 90px;
 }
 
@@ -146,7 +149,7 @@ header {
     width: 17px;
 }
 
-.controls a:hover, 
+.controls a:hover,
 .controls img:hover {
     transform: scale(1.2);
 }
@@ -157,18 +160,42 @@ header {
 }
 
 input[type="search"] {
-    display: none;
     width: 150px;
     background: transparent;
-    outline: 1px solid var(--white);
-    border: none;
-    color: var(--black);
+    border: 1px solid var(--white);
+    color: var(--white);
 }
 
-/* .controls__search:hover input{
-    display: flex;
-    margin-left: -150px; 
-} */
+input[type="search"]:active,
+input[type="search"]:focus {
+    outline: none;
+}
+
+.controls__search {
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+
+.controls.open .controls__search {
+    width: 190px;
+}
+
+input[type="image"],
+.controls.open button {
+    display: none;
+}
+
+.controls.open input[type="image"] {
+    display: block;
+    width: 17px;
+    height: 17px;
+    margin-left: 15px;
+}
+
+.controls.open {
+    flex-direction: row;
+}
 
 .burger {
     display: none;
@@ -347,7 +374,6 @@ main {
 
 .about {
     margin: 85px 0 107px;
-    padding-left: 15px;
 }
 
 .about__title-box {
@@ -734,10 +760,6 @@ input::placeholder {
         padding-right: 15px;
     }
 
-    .about {
-        padding-left: 0;
-    }
-
     .about__item-img {
         height: auto;
     }
@@ -755,7 +777,7 @@ input::placeholder {
 
     .about {
         padding-right: 15px;
-        padding-left: 0;
+        padding-left: 15px;
     }
 
     .about__wrap {
@@ -802,12 +824,20 @@ input::placeholder {
     }
 
     .header__nav-wrap {
-        display: none; 
+        display: none;
         margin: auto;
     }
 
     .header__nav {
         margin-right: 0;
+    }
+
+    .header.open {
+        margin-bottom: 0;
+    }
+
+    .header__logo {
+        position: absolute;
     }
 
     .hero__menu li:not(:first-child) {
@@ -852,7 +882,7 @@ input::placeholder {
 
     .burger {
         display: block;
-        top: 10px; 
+        top: 10px;
     }
 
     .header__logo {
@@ -885,10 +915,6 @@ input::placeholder {
 }
 
 @media (max-width: 600px) {
-    .about {
-        padding-right: 0;
-    }
-
     .services__item {
         width: 100%;
     }
