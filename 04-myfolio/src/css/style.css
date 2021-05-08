@@ -363,8 +363,8 @@ h3 {
 
 .contact__submit {
     background: #0b0b0b;
-    height: 200px;
     color: #ffffff;
+    padding: 50px 0 70px;
 }
 
 .contact__title {
@@ -383,12 +383,35 @@ h3 {
 .contact__inputs {
     display: flex;
     flex-direction: column;
+    margin-bottom: 60px;
 }
 
 .contact__inputs input {
     display: block;
     width: 630px;
+    margin: 20px auto;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--white);
+    color: var(--white);
+}
+
+.contact__inputs input[placeholder] {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    padding: 20px;
+}
+
+.contact__inputs label {
+    width: 930px;
     margin: auto;
+}
+
+.contact__inputs label input{
+    width: 100%;
+  
 }
 
 /* FOOTER */
@@ -400,4 +423,6 @@ h3 {
 
 .footer__copyright {
     text-align: center;
+    text-transform: uppercase;
+    padding: 25px 0;
 }

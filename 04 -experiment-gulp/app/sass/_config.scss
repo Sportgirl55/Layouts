@@ -1,0 +1,39 @@
+
+$black: #0b1016;
+$green: #02918c;
+$white: #ffffff;
+$gray: #7e8287;
+
+$border: 1px solid red;
+
+$fz16: 16px;
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin block {
+  display: block;
+  margin: auto;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin zero {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin after($left) {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: $left;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}

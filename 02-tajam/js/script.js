@@ -8,3 +8,8 @@ burger.addEventListener('click', function () {
   document.querySelector('.burger span').classList.toggle('active');
   menu.classList.toggle('open');
 })
+
+menu.addEventListener('click', () => {
+  menu.classList.toggle("open");
+  document.querySelector('.burger span').classList.toggle('active');
+})

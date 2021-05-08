@@ -1,25 +1,29 @@
 'use strict';
 
 const btnUp = document.querySelector('.btn-up');
+const rootElement = document.documentElement;
 
-
-window.addEventListener('scroll', function() {
-  if (this.pageYOffset > 500) {
-    btnUp.style.opacity = "1";
-  } else {
-    btnUp.style.opacity = "0";
-  }
-});
-
-var t;
-function up() {
-	var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
-	if(top > 0) {
-		window.scrollBy(0,-100);
-		t = setTimeout('up()',20);
-	} else clearTimeout(t);
-	return false;
+function scrollToTop() {
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
 }
+btnUp.addEventListener("click", scrollToTop)
+
+
+function handleScroll() {
+  var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
+  if ((rootElement.scrollTop / scrollTotal ) > 0.10 ) {
+    btnUp.classList.add("showBtn")
+  } else {
+    btnUp.classList.remove("showBtn")
+  }
+}
+
+document.addEventListener("scroll", handleScroll)
+
+
 
 
 
