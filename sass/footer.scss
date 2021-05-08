@@ -1,0 +1,65 @@
+/* CONTACT */
+
+.contact__submit {
+  background: #0b0b0b;
+  color: #ffffff;
+  padding: 25px 0 70px;
+}
+
+.contact__title {
+  max-width: 36%;
+  text-align: center;
+
+  padding-top: 83px;
+  padding-bottom: 55px;
+}
+
+.contact__btn {
+  @include block;
+  margin-top: 43px;
+}
+
+.contact__inputs {
+  @include flex-column;
+  margin-bottom: 6px;
+  input {
+    width: 630px;
+    margin: 20px auto 15px;
+    background: 0 0;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    padding: 24px 20px 13px;
+  }
+
+  input::placeholder {
+    text-transform: uppercase;
+  }
+
+  label {
+    width: 930px;
+    margin: auto;
+    input {
+      width: 100%;
+    }
+  }
+}
+
+/* FOOTER */
+
+.footer {
+  background: #000000;
+  color: #ffffff;
+}
+
+.footer__copyright {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 25px 0;
+}
+
+
+

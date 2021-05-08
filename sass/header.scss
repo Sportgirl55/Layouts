@@ -1,0 +1,44 @@
+/* HEADER */
+
+.header {
+  background: $green;
+}
+
+.header__wrap {
+  max-width: 1187px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  /* outline: 1px solid red; */
+}
+
+.header__logo {
+  max-width: 130px;
+}
+
+.header__menu {
+  display: flex;
+  li {
+     
+      font-size: 12px;
+      color: $white;
+      text-transform: uppercase;
+      font-weight: 900;
+  }
+  li:not(:last-child) {
+    margin: 0 28px;
+  }
+}
+
+.btn {
+  // @include block;
+  background-color: #cfc91d;
+  padding: 15px 5px;
+  color: $black;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+  min-width: 195px;
+}
