@@ -1,7 +1,11 @@
 /* HEADER */
 
 .header {
+  position: relative;
   background: $green;
+  @media (max-width: 768px) {
+    min-height: 60px;
+   }
 }
 
 .header__wrap {
@@ -9,34 +13,58 @@
   margin: auto;
   display: flex;
   justify-content: space-between;
-  padding: 20px 0;
-  /* outline: 1px solid red; */
+  padding: 20px 10px;
+
+  @media (max-width: 768px) {
+   justify-content: center;
+  }
 }
 
 .header__logo {
   max-width: 130px;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .header__menu {
   display: flex;
   li {
-     
-      font-size: 12px;
-      color: $white;
-      text-transform: uppercase;
-      font-weight: 900;
+    font-size: 12px;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 900;
   }
   li:not(:last-child) {
     margin: 0 28px;
+    @media (max-width: 768px) {
+      margin: 0;
+    }
   }
+  &.open li {
+    margin: 20px;
+    font-size: 22px;
+  }
+  &.open {
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  @media (max-width: 768px) {
+    width: 100vw;
+    justify-content: space-around;
+  }
+  @media (max-width: 480px) {
+    display: none;
+   }
 }
 
+
 .btn {
-  // @include block;
   background-color: #cfc91d;
   padding: 15px 5px;
   color: $black;
-  font-size: 14px;
+  font-size: $fz14;
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 2px;
