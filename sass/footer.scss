@@ -2,7 +2,7 @@
 
 .contact__submit {
   background: #0b0b0b;
-  color: #ffffff;
+  color: $white;
   padding: 25px 0 70px;
 }
 
@@ -28,11 +28,15 @@
     background: 0 0;
     border: none;
     border-bottom: 1px solid #fff;
-    color: #fff;
+    color: $white;
     text-align: center;
-    font-size: 16px;
+    font-size: $fz16;
     font-family: "Open Sans", sans-serif;
     padding: 24px 20px 13px;
+
+    @media (max-width: 768px) {
+      width: 90%;
+    }
   }
 
   input::placeholder {
@@ -40,10 +44,13 @@
   }
 
   label {
-    width: 930px;
+    min-width: 930px;
     margin: auto;
     input {
       width: 100%;
+    }
+    @media (max-width: 1160px) {
+      min-width: 90%;
     }
   }
 }
@@ -52,7 +59,7 @@
 
 .footer {
   background: #000000;
-  color: #ffffff;
+  color: $white;
 }
 
 .footer__copyright {

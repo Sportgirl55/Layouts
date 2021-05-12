@@ -3,9 +3,9 @@ $black: #0b1016;
 $green: #02918c;
 $white: #ffffff;
 $gray: #7e8287;
+$light-black: rgba(black, 0.7);
 
-$border: 1px solid red;
-
+$fz14: 14px;
 $fz16: 16px;
 
 @mixin flex-column {
